@@ -1,6 +1,25 @@
 # AutoSteno
-# Use pip2
-# 1.Install Flask
-# 2.Run python2 server.py
-# 3.Run python2 modeltraining.py
-# 4.Run python2 test.py
+
+---
+
+---
+
+## Install Flask
+
+    `$pip install Flask`
+
+## Install Dependencies
+
+    `$pip install SpeechRecognition`
+    `$pip install PyAudio`
+    `$pip install numpy`
+    `$pip install scipy`
+    `$pip install -U scikit-learn`
+    `$pip install python_speech_features`
+    Note: If using pip doesn't works than use pip2.
+
+## Run Server
+
+    `$python2 server.py`
+    `$python2 Speaker-Identification/modeltraining.py`
+    `$python2 test.py`
