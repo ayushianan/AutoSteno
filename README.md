@@ -24,6 +24,8 @@
 
     python2 server.py
 
-    python2 Speaker-Identification/modeltraining.py
+    cd Speaker-Identification
+
+    python2 modeltraining.py
 
     python2 test.py
