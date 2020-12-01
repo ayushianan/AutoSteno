@@ -23,5 +23,7 @@
 ## Run Server
 
     python2 server.py
+
     python2 Speaker-Identification/modeltraining.py
+
     python2 test.py
