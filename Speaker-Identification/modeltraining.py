@@ -40,7 +40,7 @@ for path in file_paths:
         features = np.vstack((features, vector))
     # when features of 5 files of speaker are concatenated, then do model training
 	# -> if count == 5: --> edited below
-    if count == 2:    
+    if count == 19:    
         gmm = mixture.GaussianMixture(n_components = 16, max_iter = 100, covariance_type='diag',n_init = 1)
         gmm.fit(features)
         
