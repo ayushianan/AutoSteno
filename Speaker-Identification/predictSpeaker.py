@@ -9,6 +9,12 @@ warnings.filterwarnings("ignore")
 import time
 import os.path as path
 
+def line_prepender(filename, line):
+    with open(filename, 'r+') as f:
+        content = f.read()
+        f.seek(0, 0)
+        f.write(line.rstrip('\r\n') + '\n' + content)
+
 #path to training data
 source   = "SampleData/"   
 #path where training speakers will be saved
@@ -36,4 +42,10 @@ for i in range(len(models)):
 winner = np.argmax(log_likelihood)
 print "detected as - ", speakers[winner]
 
+#Adding name of the speaker in the beginning of the script 
+fname="\myfile.txt"
+# line_prepender(root+fname,speakers[winner])
+file1 = open(root+fname, "a")  # append mode 
+file1.write('\n'+ speakers[winner]) 
+file1.close() 
 time.sleep(1.0)
