@@ -1,10 +1,37 @@
-<!doctype html>
-<head><title>Test</title> 
-    <meta charset=utf-8> </head>
-    <body>
-        <h1>My Website</h1>
-        <form action="/my-link/">
-            <input type="submit" value="Click me" />
-        </form>
-
-    </body>
+<!DOCTYPE html>
+<head>
+  <title>WELCOME TO AUTOSTENO</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+</head>
+<body>
+  <div class="w3-container w3-teal">
+    <h1>LIVE Voice Transcription</h1>
+  </div>
+  <div class="w3-container" style="background-color: #e7e9eb">
+    <p>Start Recording</p>
+    <form action="/record_audio/">
+      <input
+        type="submit"
+        value="Click Here"
+        style="color: white; background-color: #008cba; border-radius: 8px"
+      />
+    </form>
+  </div>
+  <div class="w3-container" style="background-color: #e7e9eb">
+    <br />
+    &nbsp;&nbsp;Transcript
+    <br />
+    <textarea
+      id="transcript"
+      name="transcripted_text"
+      rows="100"
+      cols="120"
+      style=""
+    >
+      {% for line in b_lines %}
+          {{ line }}
+      {% endfor %}
+    </textarea>
+  </div>
+</body>

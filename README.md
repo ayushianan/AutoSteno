@@ -20,12 +20,14 @@
 
     Note: If using pip doesn't works than use pip2.
 
-## Run Server
-
-    python2 server.py
+## Train and Test model
 
     cd Speaker-Identification
 
     python2 modeltraining.py
 
     python2 test.py
+
+## For Live Transcription
+
+    Write "run_script.bat" in terminal and Hit Enter!! All the best.
